@@ -7,4 +7,10 @@ class ClientsController < ApplicationController
     def show
         client = Client.find(params[:id])
     end
+
+    private
+
+    def clients_params
+        params.rquire(:client).permit(:name, :address)
+    end
 end

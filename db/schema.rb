@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 2020_09_24_200710) do
     t.integer "rate"
     t.integer "amount"
     t.string "note"
+    t.integer "user_id"
+    t.integer "invoice_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
