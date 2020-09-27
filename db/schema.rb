@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 2020_09_24_200710) do
     t.string "description"
     t.string "currency"
     t.string "language"
-    t.string "date"
-    t.string "due_date"
+    t.datetime "date"
+    t.datetime "due_date"
     t.integer "order_number"
     t.string "item"
     t.integer "quantity"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_09_24_200710) do
     t.integer "amount"
     t.string "note"
     t.integer "user_id"
-    t.integer "invoice_id"
+    t.integer "client_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -14,7 +14,7 @@ class CreateInvoices < ActiveRecord::Migration[6.0]
       t.integer :amount
       t.string :note
       t.integer :user_id
-      t.integer :invoice_id
+      t.integer :client_id
 
       t.timestamps
     end
